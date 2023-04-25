@@ -1,0 +1,29 @@
+<%
+const data = {
+    title: 'Sub2',
+    description: '',
+    keywords: '',
+    ogurl: '',
+    ogimage: '',
+    ogsitename: '',
+    canonical: '',
+    pageId: 'sub2',
+    headerStyle: '',
+    pathEjs: '../',
+    path: './',
+    pathAssets: './assets/',
+    pathCommon: './assets/images/common/',
+    pathImg: './assets/images/img/top/',
+    pathIcon: './assets/images/icon/',
+    pathLogo: './assets/images/logo/',
+}
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include(`${data.pathEjs}_ejs/head`, {data: data}) %>
+</head>
+<body>
+    <h1>sub2</h1>
+</body>
+</html>

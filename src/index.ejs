@@ -1,0 +1,39 @@
+<%
+const data = {
+    title: 'Home',
+    description: '',
+    keywords: '',
+    ogurl: '',
+    ogimage: '',
+    ogsitename: '',
+    canonical: '',
+    pageId: 'top',
+    headerStyle: '',
+    pathEjs: './',
+    path: './',
+    pathAssets: './assets/',
+    pathCommon: './assets/images/common/',
+    pathImg: './assets/images/img/top/',
+    pathIcon: './assets/images/icon/',
+    pathLogo: './assets/images/logo/',
+}
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include(`${data.pathEjs}_ejs/head`, {data: data}) %>
+</head>
+
+<body>
+    <%- include('./_ejs/header') %>
+    <h1 class="c-title">TOP</h1>
+    hello world !!!!!!
+    <div>
+        <img src="./assets/images/img/img_sample.svg" alt="SVG">
+    </div>
+    <div>
+        <img src="./assets/images/icon/icon_sample.svg" alt="icon">
+    </div>
+</body>
+
+</html>

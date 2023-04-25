@@ -1,0 +1,15 @@
+@mixin vwFont($fz) {
+    font-size: calc($fz / 1280 * 100vw);
+}
+
+@mixin vwFontSp($fz) {
+    font-size: calc($fz / 375 * 100vw);
+}
+
+@mixin vwSize($parameta, $size) {
+    #{$parameta}: calc($size / 1280 * 100vw);
+}
+
+@mixin vwSizeSp($parameta, $size) {
+    #{$parameta}: calc($size / 375 * 100vw);
+}

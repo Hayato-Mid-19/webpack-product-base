@@ -1,0 +1,62 @@
+{
+    "name": "webpack-product-base",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": [
+                "ts-jest",
+                {
+                    "useESM": true,
+                    "tsConfig": "tsconfig.json"
+                }
+            ]
+        },
+        "preset": "ts-jest/presets/js-with-ts-esm"
+    },
+    "scripts": {
+        "test": "jest",
+        "start": "webpack-dev-server --open --mode development",
+        "launch": "webpack-dev-server --open --mode production",
+        "build": "webpack --mode production",
+        "build-dev": "webpack --mode development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hayato-Mid-19/webpack-product-base.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hayato-Mid-19/webpack-product-base/issues"
+    },
+    "homepage": "https://github.com/Hayato-Mid-19/webpack-product-base#readme",
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/preset-env": "^7.21.4",
+        "babel-jest": "^29.5.0",
+        "babel-loader": "^9.1.2",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.7.3",
+        "file-loader": "^6.2.0",
+        "glob": "^10.2.2",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.1",
+        "jest": "^29.5.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "sass": "^1.62.0",
+        "sass-loader": "^13.2.2",
+        "template-ejs-loader": "^0.9.4",
+        "ts-jest": "^29.1.0",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.4",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.80.0",
+        "webpack-cli": "^5.0.2",
+        "webpack-dev-server": "^4.13.3",
+        "webpack-remove-empty-scripts": "^1.0.3",
+        "webpack-watched-glob-entries-plugin": "^2.2.6"
+    }
+}

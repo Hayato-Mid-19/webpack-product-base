@@ -1,0 +1,32 @@
+<%
+const data = {
+    title: 'Another',
+    description: '',
+    keywords: '',
+    ogurl: '',
+    ogimage: '',
+    ogsitename: '',
+    canonical: '',
+    pageId: 'another',
+    headerStyle: '',
+    pathEjs: './',
+    path: './',
+    pathAssets: './assets/',
+    pathCommon: './assets/images/common/',
+    pathImg: './assets/images/img/top/',
+    pathIcon: './assets/images/icon/',
+    pathLogo: './assets/images/logo/',
+}
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include(`${data.pathEjs}_ejs/head`, {data: data}) %>
+</head>
+
+<body>
+    <%- include('./_ejs/header') %>
+    <h1 class="c-title">Another</h1>
+</body>
+
+</html>
